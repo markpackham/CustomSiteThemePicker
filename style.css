@@ -117,38 +117,49 @@ h1,
 .h1 {
   font-size: var(--fs-2xl);
 }
+
 h2,
 .h2 {
   font-size: var(--fs-xl);
 }
+
 h3,
 .h3 {
   font-size: var(--fs-lg);
 }
+
 p {
   max-width: 60ch;
 }
+
 [data-color="primary"] {
   color: var(--primary);
 }
+
 [data-color="accent1"] {
   color: var(--accent1);
 }
+
 [data-color="accent2"] {
   color: var(--accent2);
 }
+
 [data-bkg="primary"] {
   background-color: var(--primary);
 }
+
 [data-bkg="accent2"] {
   background-color: var(--accent2);
 }
+
 [data-align="right"] {
   text-align: right;
 }
+
 [data-fs="2xl"] {
   font-size: var(--fs-2xl);
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -208,7 +219,7 @@ p {
   border-radius: var(--round-md);
 }
 
-.card > div {
+.card>div {
   display: grid;
   gap: var(--space-2xs);
 }
@@ -238,6 +249,7 @@ p {
   background-color: var(--btn-bkg);
   opacity: 0.8;
 }
+
 .btn:focus-visible {
   background-color: var(--btn-bkg);
   box-shadow: 0 0 0 3px var(--btn-color), 0 0 0 6px var(--btn-bkg);
@@ -268,7 +280,7 @@ section {
   color: var(--accent2);
 }
 
-.cta > div {
+.cta>div {
   flex: 1 1 53%;
 }
 
@@ -310,3 +322,21 @@ section {
 }
 
 /* SETTINGS SECTION */
+.settings-wrapper {
+  display: grid;
+  max-width: 1050px;
+  margin-inline: auto;
+}
+
+.settings {
+  background-color: red;
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+}
+
+.stack {
+  background-color: white;
+  width: 100%;
+  height: 30px;
+}
