@@ -96,25 +96,21 @@ button {
 }
 
 [data-theme="dark"] {
-  :root {
-    --bkg: var(--bkg-dark);
-    --text: var(--text-dark);
-    --primary: var(--primary-dark);
-    --accent1: var(--accent1-dark);
-    --accent2: var(--accent2-dark);
-    color-scheme: dark;
-  }
+  --bkg: var(--bkg-dark);
+  --text: var(--text-dark);
+  --primary: var(--primary-dark);
+  --accent1: var(--accent1-dark);
+  --accent2: var(--accent2-dark);
+  color-scheme: dark;
 }
 
 [data-theme="light"] {
-  :root {
-    --bkg: var(--bkg-light);
-    --text: var(--text-light);
-    --primary: var(--primary-light);
-    --accent1: var(--accent1-light);
-    --accent2: var(--accent2-light);
-    color-scheme: light;
-  }
+  --bkg: var(--bkg-light);
+  --text: var(--text-light);
+  --primary: var(--primary-light);
+  --accent1: var(--accent1-light);
+  --accent2: var(--accent2-light);
+  color-scheme: light;
 }
 
 @media (prefers-reduced-motion) {
