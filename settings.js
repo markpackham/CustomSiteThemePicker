@@ -16,3 +16,11 @@ toggles.forEach((toggle) => {
     localStorage.setItem(name, checked);
   });
 });
+
+radios.forEach((radio) => {
+  radio.addEventListener("change", (e) => {
+    const { name, id } = e.target;
+    updateSiteUi({ name, value: id });
+    localStorage.setItem(name, id);
+  });
+});
