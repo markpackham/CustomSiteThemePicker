@@ -1,5 +1,6 @@
 // selectors
 const toggles = document.querySelectorAll(".settings [type='checkbox']");
+const radios = document.querySelectorAll(".settings [type='radio']");
 const doc = document.documentElement;
 
 // functions
