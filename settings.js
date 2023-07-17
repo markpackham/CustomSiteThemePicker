@@ -30,6 +30,10 @@ toggles.forEach((toggle) => {
     const { name, checked } = e.target;
     updateSiteUi({ name, value: checked });
     localStorage.setItem(name, checked);
+    if (name === "sound") {
+      isAudioPlayable = checked;
+    }
+    playAudio("toggle");
   });
 });
 
@@ -38,5 +42,6 @@ radios.forEach((radio) => {
     const { name, id } = e.target;
     updateSiteUi({ name, value: id });
     localStorage.setItem(name, id);
+    playAudio("check");
   });
 });
