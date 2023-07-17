@@ -5,12 +5,23 @@ const audioCheck = document.querySelector("#audio-check");
 const audioToggle = document.querySelector("#audio-toggle");
 const doc = document.documentElement;
 
+let isAudioPlayable;
+
 // functions
 function updateSiteUi({ name, value }) {
   if (name === "customColor") {
     return doc.style.setProperty("--customColor", `var(--${value})`);
   }
   return (doc.dataset[name] = value);
+}
+
+function playAudio(type) {
+  if (isAudioPlayable) {
+    const audioSound = type === "check" ? audioCheck : audioToggle;
+    // restart audio as soon as clicked on
+    audioSound.currentTime = 0;
+    audioSound.play();
+  }
 }
 
 // event listeners
