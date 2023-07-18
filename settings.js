@@ -50,8 +50,9 @@ function playAudio(type) {
 
 // event listeners
 window.addEventListener("DOMContentLoaded", () => {
-  [...radios, ...toggles].forEach((setting) => {
-    const value = localStorage.getItem(setting.name) ?? "pizza";
+  settings.forEach((setting) => {
+    const value = localStorage.getItem(setting.key) ?? setting.default;
+    updateSiteUi({ name: setting.key, value });
   });
 });
 
