@@ -33,7 +33,7 @@ const settings = [
 
 // functions
 function updateSettingsUi({ name, value }) {
-  if (value === "true" || value === "false") {
+  if (typeof value === "boolean") {
   }
 }
 
