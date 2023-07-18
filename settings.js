@@ -32,6 +32,11 @@ const settings = [
 ];
 
 // functions
+function updateSettingsUi({ name, value }) {
+  if (value === "true" || value === "false") {
+  }
+}
+
 function updateSiteUi({ name, value }) {
   if (name === "customColor") {
     return doc.style.setProperty("--customColor", `var(--${value})`);
@@ -53,6 +58,7 @@ window.addEventListener("DOMContentLoaded", () => {
   settings.forEach((setting) => {
     const value = localStorage.getItem(setting.key) ?? setting.default;
     updateSiteUi({ name: setting.key, value });
+    updateSettingsUi({ name: setting.key, value });
   });
 });
 
