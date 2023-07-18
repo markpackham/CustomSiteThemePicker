@@ -33,7 +33,9 @@ const settings = [
 
 // functions
 function updateSettingsUi({ name, value }) {
-  if (typeof value === "boolean") {
+  if (value === "true" || value === "false") {
+    const checkbox = document.querySelector(`[name="${name}"]`);
+    return (checkbox.checked = value === "true" ? true : false);
   }
 }
 
