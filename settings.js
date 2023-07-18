@@ -37,6 +37,11 @@ function updateSettingsUi({ name, value }) {
     const checkbox = document.querySelector(`[name="${name}"]`);
     return (checkbox.checked = value === "true" ? true : false);
   }
+
+  // all remaining radios (the non booleans)
+  const radio = document.querySelector(`#${value}`);
+  // all others not checked marked as "false" by default
+  return (radio.checked = true);
 }
 
 function updateSiteUi({ name, value }) {
