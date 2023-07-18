@@ -7,6 +7,30 @@ const doc = document.documentElement;
 
 let isAudioPlayable;
 
+// settings with defaults
+const settings = [
+  {
+    key: "sound",
+    default: "false",
+  },
+  {
+    key: "motion",
+    default: "true",
+  },
+  {
+    key: "round",
+    default: "false",
+  },
+  {
+    key: "theme",
+    default: "system",
+  },
+  {
+    key: "customColor",
+    default: "accent2",
+  },
+];
+
 // functions
 function updateSiteUi({ name, value }) {
   if (name === "customColor") {
@@ -25,6 +49,12 @@ function playAudio(type) {
 }
 
 // event listeners
+window.addEventListener("DOMContentLoaded", () => {
+  [...radios, ...toggles].forEach((setting) => {
+    const value = localStorage.getItem(setting.name) ?? "pizza";
+  });
+});
+
 toggles.forEach((toggle) => {
   toggle.addEventListener("change", (e) => {
     const { name, checked } = e.target;
