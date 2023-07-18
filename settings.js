@@ -66,6 +66,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const value = localStorage.getItem(setting.key) ?? setting.default;
     updateSiteUi({ name: setting.key, value });
     updateSettingsUi({ name: setting.key, value });
+    if (setting.key === "sound")
+      isAudioPlayable = value === "true" ? true : false;
   });
 });
 
