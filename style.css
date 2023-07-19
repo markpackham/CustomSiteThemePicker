@@ -393,6 +393,10 @@ section {
   margin-inline: auto;
 }
 
+.settings-wrapper h2 {
+  color: var(--customColor);
+}
+
 .settings {
   display: flex;
   align-items: flex-start;
@@ -405,4 +409,23 @@ section {
   display: grid;
   gap: var(--space-sm);
   width: 100%;
+}
+
+.switch-wrapper {
+  position: relative;
+  background-color: red;
+}
+
+[type="checkbox"] {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.switch-label {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
 }
