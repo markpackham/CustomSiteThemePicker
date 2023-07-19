@@ -413,19 +413,22 @@ section {
 
 .switch-wrapper {
   position: relative;
-  background-color: red;
 }
 
-[type="checkbox"] {
-  position: absolute;
-  inset: 0;
-  cursor: pointer;
-  opacity: 0;
-}
-
+[type="checkbox"],
 .switch-label {
   position: absolute;
   inset: 0;
   opacity: 0;
   cursor: pointer;
+}
+
+.switch {
+  display: flex;
+  gap: var(--space-2xs);
+  align-items: center;
+  justify-content: space-evenly;
+  padding: var(--space-xs);
+  border: 2px solid var(--customColor);
+  border-radius: var(--round-md);
 }
