@@ -431,4 +431,28 @@ section {
   padding: var(--space-xs);
   border: 2px solid var(--customColor);
   border-radius: var(--round-md);
+  pointer-events: none;
+  background-color: var(--bkg);
+}
+
+.switch .thumb {
+  --size: 3rem;
+  flex-shrink: 0;
+  position: relative;
+  width: var(--size);
+  height: calc(var(--size)/2);
+  background-color: var(--customColor);
+  border-radius: var(--round-full);
+}
+
+.switch .thumb::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(var(--size)/12);
+  transform: translate(0, -50%);
+  width: calc(var(--size)/3);
+  height: calc(var(--size)/3);
+  background-color: var(--bkg);
+  border-radius: var(--round-full);
 }
