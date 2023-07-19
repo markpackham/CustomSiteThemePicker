@@ -458,7 +458,9 @@ section {
   transition: transform 0.2s var(--ease-elastic);
 }
 
-[type="checkbox"]:focus-visible~.switch .thumb {}
+[type="checkbox"]:focus-visible~.switch .thumb {
+  box-shadow: 0 0 0 3px var(--bkg), 0 0 0 6px var(--customColor);
+}
 
 [type="checkbox"]:checked~.switch .thumb::before {
   transform: translate(calc(var(--size) - var(--size) / 2), -50%);
