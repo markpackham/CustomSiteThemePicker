@@ -455,4 +455,11 @@ section {
   height: calc(var(--size)/3);
   background-color: var(--bkg);
   border-radius: var(--round-full);
+  transition: transform 0.2s var(--ease-elastic);
+}
+
+[type="checkbox"]:focus-visible~.switch .thumb {}
+
+[type="checkbox"]:checked~.switch .thumb::before {
+  transform: translate(calc(var(--size) - var(--size) / 2), -50%);
 }
