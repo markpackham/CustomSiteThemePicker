@@ -443,6 +443,7 @@ section {
   height: calc(var(--size)/2);
   background-color: var(--customColor);
   border-radius: var(--round-full);
+  transition: box-shadow 0.2s var(--ease-elastic);
 }
 
 .switch .thumb::before {
