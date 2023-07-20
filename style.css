@@ -504,9 +504,13 @@ legend {
   width: var(--size);
   height: var(--size);
   background-color: var(--bkg);
-  transition: background-color 0.2 var(--ease-elastic);
+  transition: background-color 0.2s ease-in-out;
 }
 
 [type="radio"]:checked~.check {
   background-color: var(--customColor);
+}
+
+[type="radio"]:focus-visible~.check {
+  box-shadow: 0 0 0 3px var(--bkg), 0 0 0 6px var(--customColor);
 }
