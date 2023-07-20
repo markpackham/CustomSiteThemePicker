@@ -473,3 +473,13 @@ legend {
   border-radius: var(--round-md);
   background-color: var(--bkg);
 }
+
+.radio-wrapper {
+  padding: var(--space-xs);
+  border: 2px solid var(--customColor);
+  border-radius: var(--round-md);
+  background-color: var(--bkg);
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
