@@ -521,4 +521,8 @@ legend {
   .stack {
     max-width: fit-content;
   }
+
+  .stack {
+    flex: 1 1 40%;
+  }
 }
