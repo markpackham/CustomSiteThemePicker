@@ -466,3 +466,10 @@ section {
 [type="checkbox"]:checked~.switch .thumb::before {
   transform: translate(calc(var(--size) - var(--size) / 2), -50%);
 }
+
+legend {
+  padding-inline: var(--space-md);
+  border: 2px solid var(--customColor);
+  border-radius: var(--round-md);
+  background-color: var(--bkg);
+}
