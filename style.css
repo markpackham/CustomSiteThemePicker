@@ -506,3 +506,7 @@ legend {
   background-color: var(--bkg);
   transition: background-color 0.2 var(--ease-elastic);
 }
+
+[type="radio"]:checked~.check {
+  background-color: var(--customColor);
+}
