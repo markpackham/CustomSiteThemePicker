@@ -514,3 +514,11 @@ legend {
 [type="radio"]:focus-visible~.check {
   box-shadow: 0 0 0 3px var(--bkg), 0 0 0 6px var(--customColor);
 }
+
+@media screen and (min-width: 465px) {
+
+  .radio-wrapper,
+  .stack {
+    max-width: fit-content;
+  }
+}
