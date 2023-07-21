@@ -75,6 +75,13 @@ button {
   --accent1-dark: #fd5050;
   --accent2-dark: #ffb03a;
 
+  /* cool */
+  --bkg-cool: #416d33;
+  --text-cool: #dbdee3;
+  --primary-cool: #b4b24b;
+  --accent1-cool: rgb(86, 114, 81);
+  --accent2-cool: #b18374;
+
   /* default to light */
   --bkg: var(--bkg-light);
   --text: var(--text-light);
@@ -115,6 +122,16 @@ button {
   /* custom color selection */
   --customColor: var(--accent2);
 }
+
+[data-theme="cool"] {
+  --bkg: var(--bkg-cool);
+  --text: var(--text-cool);
+  --primary: var(--primary-cool);
+  --accent1: var(--accent1-cool);
+  --accent2: var(--accent2-cool);
+  color-scheme: light;
+}
+
 
 @media (prefers-reduced-motion) {
 
