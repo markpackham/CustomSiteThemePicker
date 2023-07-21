@@ -180,6 +180,17 @@ button {
   color-scheme: dark;
 }
 
+[data-theme="wild"] .wave {
+  mix-blend-mode: overlay;
+}
+
+[data-theme="dracula"] .wave {
+  mix-blend-mode: screen;
+}
+
+[data-theme="material"] .wave {
+  mix-blend-mode: luminosity;
+}
 
 @media (prefers-reduced-motion) {
 
